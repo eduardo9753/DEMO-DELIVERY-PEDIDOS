@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <h3>Acerca</h3>
-                    <p>Agape chicken & grill, venta de pollos a la brasa, chifas y parrilas</p>
+                    <p>{{ env('NOMBRE_EMPRESA') }}, venta de pollos a la brasa, chifas y parrilas</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3>Subscribe</h3>
@@ -73,9 +73,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3>Contactanos</h3>
-                    <p class="lead"> parque sinchi roc, Av. Universitaria 9311, Comas 15316</p>
-                    <p class="lead"><a href="#">+51 946 015 906</a></p>
-                    <p><a href="#"> enproceso@gmail.com</a></p>
+                    <p class="lead"> {{ env('DIRECCION_EMPRESA') }}</p>
+                    <p class="lead"><a href="#">{{ env('TELEFONOS') }}</a></p>
+                    <p><a href="#"> {{ env('CORREO') }}</a></p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3>Horarios</h3>
@@ -91,8 +91,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="company-name">All Rights Reserved. &copy; 2024 <a href="#">Agape chicken &
-                                grill</a>
+                        <p class="company-name">All Rights Reserved. &copy; 2024 <a
+                                href="#">{{ env('DIRECCION_EMPRESA') }}</a>
                             <a href=""></a>
                         </p>
                     </div>

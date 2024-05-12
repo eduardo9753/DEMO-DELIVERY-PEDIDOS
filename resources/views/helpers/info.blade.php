@@ -6,7 +6,7 @@
                 <div class="overflow-hidden">
                     <h4>Celular</h4>
                     <p class="lead">
-                        +51 946 015 906
+                        {{ env('TELEFONOS') }}
                     </p>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                 <div class="overflow-hidden">
                     <h4>Email</h4>
                     <p class="lead">
-                        enproceso@gmail.com
+                        {{ env('CORREO') }}
                     </p>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="overflow-hidden">
                     <h4>Ubicacion</h4>
                     <p class="lead">
-                        Universitaria 9311, Comas 15316
+                        {{ env('DIRECCION_EMPRESA') }}
                     </p>
                 </div>
             </div>

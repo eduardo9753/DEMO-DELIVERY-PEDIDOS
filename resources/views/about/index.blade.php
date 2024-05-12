@@ -12,7 +12,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Acerca de nosotros</h1>
+                    <h1>nosotros</h1>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 text-center">
                     <div class="inner-column">
-                        <h1>Les Saluda! <span>Agape chicken & grill</span></h1>
+                        <h1>Les Saluda! <span>{{ env('NOMBRE_EMPRESA') }}</span></h1>
                         <h4>nuestra historia</h4>
                         <p>somos un emprendimiento con mas de 9 años en el mercado, brindando los mejores productos de
                             comida rapida</p>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="inner-pt">
-                        <p>En Agape Chicken & Grill, nos especializamos en la venta de deliciosos pollos a la brasa, además
+                        <p>En {{ env('NOMBRE_EMPRESA') }}, nos especializamos en la venta de deliciosos pollos a la brasa, además
                             de ofrecer una amplia variedad de platos de chifa y parrilla. </p>
                         <p>Nuestro compromiso es brindarte una experiencia culinaria excepcional, donde la calidad y el
                             sabor se fusionan para satisfacer los paladares más exigentes. ¡Ven y descubre el auténtico

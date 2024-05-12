@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <div class="heading-title text-center">
                     <h2>Clientes</h2>
-                    <p>Nuestros mejores clientes dejan su opinion</p>
+                    <p>Nuestros mejores clientes dejan su opinión</p>
                 </div>
             </div>
         </div>

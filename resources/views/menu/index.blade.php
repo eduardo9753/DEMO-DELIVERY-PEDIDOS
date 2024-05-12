@@ -12,7 +12,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Nuestro Menu</h1>
+                    <h1>Nuestra Carta</h1>
                 </div>
             </div>
         </div>
