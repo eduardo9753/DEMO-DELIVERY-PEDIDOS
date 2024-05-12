@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>Ágape Chicken & Grill</title>
+    <title>{{env('NOMBRE_EMPRESA')}}</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -92,7 +92,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <p class="company-name">All Rights Reserved. &copy; 2024 <a
-                                href="#">{{ env('DIRECCION_EMPRESA') }}</a>
+                                href="#">{{ env('NOMBRE_EMPRESA') }}</a>
                             <a href=""></a>
                         </p>
                     </div>
