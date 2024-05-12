@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\menu\menu;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class MenuController extends Controller
