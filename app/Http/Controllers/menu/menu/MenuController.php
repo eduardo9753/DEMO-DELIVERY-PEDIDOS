@@ -13,8 +13,8 @@ class MenuController extends Controller
     {
         $categoryIds = DB::connection('other_system')
             ->table('categories')
-            ->whereNot('name', 'DELIVERY')
-            ->pluck('id');  // IDs de las categorías que deseas filtrar
+            ->where('name', '!=', 'DELIVERY')
+            ->pluck('id');
 
         $categoriesWithDishes = DB::connection('other_system')
             ->table('categories')
