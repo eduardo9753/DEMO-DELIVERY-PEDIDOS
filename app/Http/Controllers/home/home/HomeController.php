@@ -11,7 +11,10 @@ class HomeController extends Controller
     //
     public function index()
     {
-        $categoryIds = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 18];  // IDs de las categorías que deseas filtrar
+        $categoryIds = DB::connection('other_system')
+            ->table('categories')
+            ->where('name', '!=', 'DELIVERY')
+            ->pluck('id');
 
         $categoriesWithDishes = DB::connection('other_system')
             ->table('categories')
