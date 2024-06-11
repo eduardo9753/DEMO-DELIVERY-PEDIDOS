@@ -20,12 +20,24 @@
     <!-- End All Pages -->
 
 
+    <style>
+        .map-full {
+            width: 100%;
+            height: auto;
+            /* Si deseas que el contenedor ajuste su altura automáticamente */
+        }
+
+        .map-full iframe {
+            width: 100%;
+            height: 400px;
+            /* Ajusta según el tamaño deseado del iframe */
+            border: 0;
+            /* Quita el borde del iframe */
+        }
+    </style>
     <!-- Start Contact -->
     <div class="map-full">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.860849323978!2d-77.05063392610822!3d-11.914770839454805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d0511c25208d%3A0x794f394e7059c0ca!2sAv.%20Universitaria%209307%2C%20Comas%2015316!5e0!3m2!1ses-419!2spe!4v1714686646789!5m2!1ses-419!2spe"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        {!! $company->mapa_empresa !!}
     </div>
     <div class="contact-box">
         <div class="container">
@@ -92,4 +104,9 @@
     <!-- Start Contact info -->
     @include('helpers.info')
     <!-- End Contact info -->
+@endsection
+
+
+@section('footer')
+    @include('helpers.footer')
 @endsection

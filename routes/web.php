@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'] )->name('home.index');
 
-Route::get('/menu-agape', [MenuController::class , 'index'])->name('menu.index');
+Route::get('/nuestro-menu', [MenuController::class , 'index'])->name('menu.index');
 
 Route::get('/acerca-de-nostros', [AboutController::class , 'index'])->name('about.index');
 

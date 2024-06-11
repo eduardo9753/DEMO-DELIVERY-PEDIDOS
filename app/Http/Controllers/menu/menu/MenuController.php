@@ -23,6 +23,11 @@ class MenuController extends Controller
             ->get()
             ->groupBy('category_id');
 
-        return view('menu.index', compact('categoriesWithDishes'));
+        $company = DB::connection('other_system')->table('companies')->first();
+
+        return view('menu.index', [
+            'company' => $company,
+            'categoriesWithDishes' => $categoriesWithDishes
+        ]);
     }
 }

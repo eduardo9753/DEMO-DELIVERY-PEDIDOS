@@ -27,11 +27,12 @@ class HomeController extends Controller
 
         $products = DB::connection('other_system')->table('dishes')->inRandomOrder()->take(6)->get();
 
+        $company = DB::connection('other_system')->table('companies')->first();
 
-        //dd($categoriesWithDishes);
         return view('home.index', [
             'categoriesWithDishes' => $categoriesWithDishes,
-            'products' => $products
+            'products' => $products,
+            'company' => $company,
         ]);
     }
 }

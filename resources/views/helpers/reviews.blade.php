@@ -17,7 +17,7 @@
                                 <img class="d-block w-100 rounded-circle"
                                     src="{{ asset('assets/images/quotations-button.png') }}" alt="">
                             </div>
-                            <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Richard Alama</strong>
+                            <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Richard</strong>
                             </h5>
                             <h6 class="text-dark m-0">cliente frecuente</h6>
                             <p class="m-0 pt-3">La atención brindada fue realmente destacable, con un servicio rápido y
@@ -29,7 +29,7 @@
                                 <img class="d-block w-100 rounded-circle"
                                     src="{{ asset('assets/images/quotations-button.png') }}" alt="">
                             </div>
-                            <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Anthony Nuñez</strong>
+                            <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Anthony</strong>
                             </h5>
                             <h6 class="text-dark m-0">cliente frecuente</h6>
                             <p class="m-0 pt-3">La comida tiene una sazón excepcional y el servicio es sorprendentemente

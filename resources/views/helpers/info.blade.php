@@ -6,7 +6,7 @@
                 <div class="overflow-hidden">
                     <h4>Celular</h4>
                     <p class="lead">
-                        {{ env('TELEFONOS') }}
+                        {{ $company->numero_uno_empresa }} - {{ $company->numero_dos_empresa }}
                     </p>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                 <div class="overflow-hidden">
                     <h4>Email</h4>
                     <p class="lead">
-                        {{ env('CORREO') }}
+                        {{ $company->correo_empresa }}
                     </p>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="overflow-hidden">
                     <h4>Ubicacion</h4>
                     <p class="lead">
-                        {{ env('DIRECCION_EMPRESA') }}
+                        {{ $company->direccion_empresa }}
                     </p>
                 </div>
             </div>

@@ -24,6 +24,11 @@ class AboutController extends Controller
             ->get()
             ->groupBy('category_id');
 
-        return view('about.index', compact('categoriesWithDishes'));
+        $company = DB::connection('other_system')->table('companies')->first();
+
+        return view('about.index', [
+            'company' => $company,
+            'categoriesWithDishes' => $categoriesWithDishes
+        ]);
     }
 }

@@ -35,3 +35,7 @@
     @include('helpers.info')
     <!-- End Contact info -->
 @endsection
+
+@section('footer')
+    @include('helpers.footer')
+@endsection

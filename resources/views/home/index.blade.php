@@ -15,7 +15,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>NOMBRE <br> DE TU EMPRESA</strong></h1>
+                            <h1 class="m-b-20"><strong>{{ $company->razon_social_empresa }}</strong></h1>
                             <p class="m-b-40">¡Ven y descubre la excelencia en cada bocado! En nuestra pollería, te esperan
                                 'Los Mejores Pollos a la Brasa de Todo Comas'. Déjate seducir por el sabor inigualable,
                                 la jugosidad irresistible y el aroma tentador de nuestras deliciosas creaciones. ¡Una
@@ -31,7 +31,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>NOMBRE <br> DE TU EMPRESA</strong></h1>
+                            <h1 class="m-b-20"><strong>{{ $company->razon_social_empresa }}</strong></h1>
                             <p class="m-b-40">¡Hacer tu pedido es más fácil que nunca! Ahora puedes solicitar tus órdenes
                                 directamente desde nuestra página web o a través de nuestro Whatsapp al +51 922394642. ¡Haz
                                 tu pedido ahora y disfruta de la comodidad de recibir nuestros deliciosos platos en la
@@ -47,7 +47,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>NOMBRE <br> DE TU EMPRESA</strong></h1>
+                            <h1 class="m-b-20"><strong>{{ $company->razon_social_empresa }}</strong></h1>
                             <p class="m-b-40">¡Crea momentos inolvidables en familia con nuestros increíbles combos!
                                 Descubre los mejores sabores y variedades diseñados especialmente para compartir. Desde
                                 nuestras exquisitas opciones, hasta nuestros platos más emblemáticos, encontrarás la
@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                     <div class="inner-column">
-                        <h1>Les Saluda! <span>{{ env('NOMBRE_EMPRESA') }}</span></h1>
+                        <h1>Les Saluda! <span>{{ $company->razon_social_empresa }}</span></h1>
                         <h4>nuestra historia</h4>
                         <p>Somos un emprendimiento con más de 9 años en el mercado, ofreciendo los mejores productos de
                             comida rápida.</p>
@@ -133,4 +133,9 @@
     <!-- Start Contact info -->
     @include('helpers.info')
     <!-- End Contact info -->
+@endsection
+
+
+@section('footer')
+    @include('helpers.footer')
 @endsection

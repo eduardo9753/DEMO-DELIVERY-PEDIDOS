@@ -47,7 +47,7 @@
                                                 <h4>{{ $dish->name }}</h4>
                                                 <p>{{ $dish->description }}</p>
                                                 <h5>S/.{{ $dish->price }}</h5>
-                                                <a href="https://wa.me/51924080517?text=Hola quiero pedir - Codigo:{{ $dish->id }} - {{ $dish->name }} - {{ $dish->description }}"
+                                                <a href="https://wa.me/51{{ $company->numero_uno_empresa }}?text=Hola quiero pedir - Codigo:{{ $dish->id }} - {{ $dish->name }} - {{ $dish->description }}"
                                                     class="btn btn-success">WhatsApp</a>
                                             </div>
 
